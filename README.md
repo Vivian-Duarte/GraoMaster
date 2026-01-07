@@ -19,7 +19,7 @@ O **GrãoMaster** é um Sistema de Banco de Dados (SBD) não relacional desenvol
 
 A rastreabilidade é um fator essencial no mercado de cafés especiais, pois características como origem, variedade da planta, altitude e método de processamento impactam diretamente a qualidade percebida e o valor comercial do produto.  
 
-A ausência de um registro estruturado e confiável dessas informações pode resultar em perda de valor, dificuldades de certificação e menor transparência para compradores e consumidores finais. Nesse contexto, o CoffeeTrace surge como uma solução para organizar e manter essas informações de forma flexível e consistente.
+A ausência de um registro estruturado e confiável dessas informações pode resultar em perda de valor, dificuldades de certificação e menor transparência para compradores e consumidores finais. Nesse contexto, o GrãoMaster surge como uma solução para organizar e manter essas informações de forma flexível e consistente.
 
 ---
 
