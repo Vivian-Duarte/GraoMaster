@@ -1,4 +1,4 @@
-# CoffeeTrace: Rastreabilidade de Cafés Especiais
+# GrãoMaster: Rastreabilidade de Cafés Especiais
 
 **Universidade Federal de Ouro Preto (UFOP)**  
 **ICEA – Departamento de Computação e Sistemas (DECSI)**  
