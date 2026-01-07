@@ -13,7 +13,7 @@ Nicholas Arthur Guimarães Andrade – 23.2.8018
 
 ##  1. Sobre o Projeto
 
-O **CoffeeTrace** é um Sistema de Banco de Dados (SBD) não relacional desenvolvido com o objetivo de realizar a rastreabilidade completa de micro-lotes de cafés especiais, acompanhando o produto desde sua origem na fazenda e no talhão até a saca final comercializada.
+O **GrãoMaster** é um Sistema de Banco de Dados (SBD) não relacional desenvolvido com o objetivo de realizar a rastreabilidade completa de micro-lotes de cafés especiais, acompanhando o produto desde sua origem na fazenda e no talhão até a saca final comercializada.
 
 ### Contexto e Motivação
 
