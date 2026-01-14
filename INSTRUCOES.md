@@ -39,7 +39,7 @@ Digite:
     pip install pymongo streamlit
 
 ### Passo 4: Criar e Povoar o Banco
-# Para criar o banco GraoMasterDB e inserir os dados iniciais (Fazenda, Lote, Sacas):
+### Para criar o banco GraoMasterDB e inserir os dados iniciais (Fazenda, Lote, Sacas):
     python scripts_banco.py
 
 ### Verificar os Dados (Visualmente)
