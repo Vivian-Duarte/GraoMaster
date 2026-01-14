@@ -1,14 +1,14 @@
-# ☕ GrãoMaster - Guia de Instalação e Execução
+# GrãoMaster - Guia de Instalação e Execução
 
 Este guia contém o passo a passo para configurar o ambiente e rodar o script de povoamento do banco de dados.
 
-## 🛠️ 1. Pré-requisitos (Instalação)
+## 1. Pré-requisitos (Instalação)
 
 Instale os softwares abaixo (caso não tenha):
 
 1.  **Python (3.10 ou superior)**
     * [Baixar Python](https://www.python.org/downloads/)
-    * ⚠️ **Importante:** Na instalação, marque a opção **"Add Python to PATH"**.
+    *  **Importante:** Na instalação, marque a opção **"Add Python to PATH"**.
 2.  **MongoDB Community Server** (O Banco de Dados)
     * [Baixar MongoDB Community](https://www.mongodb.com/try/download/community)
     * Instale como "Service" (padrão) para ele rodar automaticamente e coloque a opção **"Install MongoDB Compass"** .
@@ -19,7 +19,7 @@ Instale os softwares abaixo (caso não tenha):
 
 ---
 
-## 🚀 2. Configurando o Projeto
+## 2. Configurando o Projeto
 
 Siga estes passos no terminal (VS Code ou PowerShell):
 
