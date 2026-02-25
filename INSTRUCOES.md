@@ -1,4 +1,4 @@
-# ☕ GrãoMaster - Guia de Instalação e Execução
+# GrãoMaster - Guia de Instalação e Execução
 
 Este guia contém o passo a passo para configurar o ambiente, visualizar os modelos, povoar o banco de dados e executar o Sistema de Banco de Dados (SBD) de rastreabilidade de cafés especiais.
 
