@@ -220,22 +220,22 @@ def buscar_rastreabilidade(event=None):
         pilares_str = ", ".join(reprovados)
         nome_faz = fazenda.get('Nome', 'Desconhecida')
         
-        text_resultado.insert(tk.END, f"⚠️ ATENÇÃO: Este lote possui Não Conformidade na origem.\n\n", ("alerta_vermelho", "center"))
+        text_resultado.insert(tk.END, f" ATENÇÃO: Este lote possui Não Conformidade na origem.\n\n", ("alerta_vermelho", "center"))
         text_resultado.insert(tk.END, f"Auditoria: A fazenda {nome_faz} foi avaliada e REPROVADA em [{pilares_str}] nesta safra.\n", ("alerta_vermelho", "center"))
         text_resultado.insert(tk.END, "-"*65 + "\n\n", "center")
 
     saida = f"=== RASTREABILIDADE DA SACA: {saca['_id']} ===\n\n"
     
-    saida += f"[📦 DADOS DA SACA]\n"
+    saida += f"[DADOS DA SACA]\n"
     saida += f"ID da Saca: {saca['_id']} | Peso: {saca.get('Peso_kg')} kg\n"
     saida += f"Status: {lote.get('Status').upper()}\n\n"
 
-    saida += f"[☕ PERFIL DO LOTE E AVALIAÇÃO]\n"
+    saida += f"[PERFIL DO LOTE E AVALIAÇÃO]\n"
     saida += f"Veio do Lote: {lote['_id']} | Safra: {lote.get('Ano_safra')}\n"
     saida += f"Nota SCA: {lote['Avaliacao_Sensorial'].get('Nota_sca')} | Descrição: {lote['Avaliacao_Sensorial'].get('Descricao', 'N/A')}\n"
     saida += f"Avaliador Responsável: {lote['Avaliacao_Sensorial'].get('Avaliador', 'N/A')}\n\n"
 
-    saida += f"[🏡 ORIGEM E TERROIR]\n"
+    saida += f"[ ORIGEM E TERROIR]\n"
     saida += f"Fazenda: {fazenda.get('Nome', 'Não informada')} (ID: {lote.get('ID_fazenda')})\n"
     saida += f"Talhão: {lote.get('Talhao', 'N/A')}\n"
     saida += f"Variedade: {lote.get('Origem', {}).get('Variedade_Planta', 'N/A')} | Altitude: {lote.get('Origem', {}).get('Altitude_Metros', 'N/A')}m\n\n"
@@ -257,7 +257,7 @@ abas = ttk.Notebook(janela)
 abas.pack(pady=10, expand=True, fill="both")
 
 aba_produtor = ttk.Frame(abas)
-abas.add(aba_produtor, text="👨‍🌾 1. Produtor")
+abas.add(aba_produtor, text=" 1. Produtor")
 
 tk.Label(aba_produtor, text="Cadastrar Origem do Lote", font=fonte_titulo, fg=cor_primaria).pack(pady=(15, 10))
 
@@ -295,7 +295,7 @@ entry_var_prod.bind("<Return>", cadastrar_origem)
 entry_fazenda_prod.focus()
 
 aba_avaliador = ttk.Frame(abas)
-abas.add(aba_avaliador, text="☕ 2. Avaliador / Auditor")
+abas.add(aba_avaliador, text=" 2. Avaliador / Auditor")
 
 frame_busca = tk.Frame(aba_avaliador)
 frame_busca.pack(pady=10)
@@ -337,10 +337,10 @@ tk.Label(frame_cupping, text="Nota SCA:").pack(anchor="w"); entry_nota_aval = tk
 tk.Label(frame_cupping, text="Descrição do Café:").pack(anchor="w"); entry_desc_aval = tk.Entry(frame_cupping, width=40); entry_desc_aval.pack(anchor="w", pady=(0, 5))
 tk.Label(frame_cupping, text="Avaliador/Auditor:").pack(anchor="w"); entry_nome_aval = tk.Entry(frame_cupping, width=40); entry_nome_aval.pack(anchor="w", pady=(0, 5))
 
-tk.Button(frame_formulario_aval, text="💾 Salvar Auditoria e Finalizar Lote", command=salvar_auditoria_cupping, bg=cor_primaria, fg="white", font=("Arial", 11, "bold")).pack(pady=15)
+tk.Button(frame_formulario_aval, text=" Salvar Auditoria e Finalizar Lote", command=salvar_auditoria_cupping, bg=cor_primaria, fg="white", font=("Arial", 11, "bold")).pack(pady=15)
 
 aba_ensaque = ttk.Frame(abas)
-abas.add(aba_ensaque, text="📦 3. Ensacamento")
+abas.add(aba_ensaque, text=" 3. Ensacamento")
 tk.Label(aba_ensaque, text="Gerar Sacas do Lote Finalizado", font=fonte_titulo, fg=cor_primaria).pack(pady=10)
 
 tk.Label(aba_ensaque, text="ID Lote de Origem:", font=fonte_label).pack()
@@ -363,7 +363,7 @@ entry_saca_ensaque.bind("<Return>", lambda e: entry_peso_ensaque.focus())
 entry_peso_ensaque.bind("<Return>", ensacar_lote)
 
 aba_rastreio = ttk.Frame(abas)
-abas.add(aba_rastreio, text="🔍 4. Rastreabilidade")
+abas.add(aba_rastreio, text=" 4. Rastreabilidade")
 tk.Label(aba_rastreio, text="Rastreabilidade da Saca", font=fonte_titulo, fg=cor_primaria).pack(pady=10)
 tk.Label(aba_rastreio, text="Digite o ID da SACA:").pack(); entry_busca = tk.Entry(aba_rastreio, width=40); entry_busca.pack()
 tk.Button(aba_rastreio, text="Buscar", command=buscar_rastreabilidade, bg="#2196F3", fg="white").pack(pady=10)
